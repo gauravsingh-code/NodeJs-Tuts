@@ -6,8 +6,5 @@ My To Do List :
 4. Exercise
 5. Meditation
 6. Browsing
-<<<<<<< HEAD
 8.Practice Code
-=======
 7.Dinner
->>>>>>> 5bddd516c844184a4be8d956a818b2e52ebade95
