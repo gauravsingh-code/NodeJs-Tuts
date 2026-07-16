@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body>
+    <h1>Welcome to the Secure Document Management API</h1>
+
+    <p>This API allows users to upload and manage their documents securely.</p>
+
+    <!-- here it is sending the multipart/form data but server just start  -->
+    <!-- <form  action="http://localhost:3000/api/form" method="post" enctype="multipart/form-data">
+            <label for="file"> Upload Document</label>
+            <input type="file" name="file" id="file" required>
+            <button type="submit">Upload</button> -->
+    <!-- </form> -->
+
+    <form
+        action="http://localhost:3000/api/form"
+        method="post"
+        accept="application/pdf"
+    >
+
+    </form>
+
+
+<!-- we have to use fetch for making a request which sends pdf in appliation/pdf format -->
+<script>
+ const fileInput = document.getElementById('file');
+</script>
+</body>
+</html>
