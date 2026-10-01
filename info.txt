@@ -1,0 +1,10 @@
+npm install -g autocannon
+autocannon -c 100 -d 30 http://localhost:3000/api/crud/10
+
+For example:
+autocannon -c 10 -d 20 http://localhost:3000/api/crud/10
+then:
+autocannon -c 100 -d 20 http://localhost:3000/api/crud/10
+then:
+autocannon -c 500 -d 20 http://localhost:3000/api/crud/10
+Compare the results.
