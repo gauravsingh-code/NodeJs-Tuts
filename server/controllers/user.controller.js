@@ -1,16 +1,19 @@
 import {getAllUsers, getUserById as getUserByIdFromService} from '../services/user.service.js';
 import PDFDocument from 'pdfkit';
+import { AppError } from '../errors/AppError.js';
 
 export const getUsers =  async (req, res, next) => {
-
-    try{
         const users =  await getAllUsers();
 
-        res.status(200).json(users);
-    } catch(err){
-        console.error(err.message);
-        next(err);
-    }
+        if (!users) {
+                throw new AppError(
+                    "User not found",
+                    404,
+                    "USER_NOT_FOUND"
+                );
+        }       
+    res.status(200).json(users);
+   
 }
 
 export const getUserById = async (req, res, next) => {

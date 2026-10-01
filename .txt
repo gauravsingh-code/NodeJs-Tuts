@@ -1,3 +1,0 @@
-1..
-
-Building a generating pdf through data
